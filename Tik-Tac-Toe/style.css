@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgba(220, 234, 241, 0.901), rgba(32, 77, 221, 0.836));
+}
+h1{
+    font-size: 2rem;
+    font-family: "Anta", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    color:rgb(22, 22, 21);
+    height: 90px;
+    font-size: 32px;
+    display: flex;
+    padding:0 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+}
+nav, nav a {
+    font-family: "Anta", sans-serif;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    padding: 40px;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: "Anta", sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.5s ease; 
+}
+
+.box:hover {
+    background-color: rgba(79, 114, 227, 0.53); /* Adjust the color and transparency as needed */
+    box-shadow: 0 0 10px black;
+}    
+.info{
+    font-size: 20px;
+}
+
+.gameInfo{
+    padding: 34px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    padding:14vw;
+}
+
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding:6px 14px;
+    background-color:rgba(147, 150, 184, 0.7);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+}
+
+#reset:hover{
+    box-shadow: 0 0 10px black;
+}
+
+
+
+@media screen and (max-width: 750px){
+    .gameContainer{ 
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+    }
+}
